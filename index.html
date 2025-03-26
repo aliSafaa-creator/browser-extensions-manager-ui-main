@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <!-- displays site properly based on user's device -->
+
+          <link
+               rel="icon"
+               type="image/png"
+               sizes="32x32"
+               href="./assets/images/favicon-32x32.png"
+          />
+
+          <title>Frontend Mentor | Browser extensions manager UI</title>
+
+          <link rel="stylesheet" href="style.css" />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+               rel="stylesheet"
+          />
+     </head>
+     <body>
+          <!-- header -->
+          <div class="container">
+               <header>
+                    <img
+                         class="logo"
+                         src="./assets/images/logo.svg"
+                         alt="logo"
+                    />
+                    <img
+                         class="icon-sun"
+                         src="./assets/images/icon-sun.svg"
+                         alt="icon"
+                    />
+               </header>
+               <!-- main -->
+               <div class="title-filter-toolbar">
+                    <h1>Extensions List</h1>
+                    <div class="filter-toolbar">
+                         <button class="filter-button filter-all">All</button>
+                         <button class="filter-button filter-active">
+                              Active
+                         </button>
+                         <button class="filter-button filter-inactive">
+                              inActive
+                         </button>
+                    </div>
+               </div>
+
+               <div data-listOfExtensions class="listOfExtensions"></div>
+
+               <div class="attribution">
+                    Challenge by
+                    <a href="https://www.frontendmentor.io?ref=challenge"
+                         >Frontend Mentor</a
+                    >. Coded by <a href="#">Ali Safaa</a>.
+               </div>
+          </div>
+
+          <script src="script.js"></script>
+     </body>
+</html>
