@@ -7,13 +7,17 @@
 
 body {
      background: linear-gradient(86deg, #1e3548, #051c38);
+     transition: 0.5s ease-in;
+}
+
+.light-mode {
+     background: #ededed;
 }
 
 .container {
      width: 100%;
      max-width: 1200px;
      margin: 20px auto;
-     /* padding: 0 20px; */
 }
 
 header {
@@ -23,6 +27,10 @@ header {
      background: #283046;
      border-radius: 10px;
      padding: 10px 20px;
+}
+
+.light-mode header {
+     background: #adacac;
 }
 
 header > .icon-sun {
@@ -50,6 +58,10 @@ header > .icon-sun:hover {
      font-weight: 700;
 }
 
+.light-mode .title-filter-toolbar > h1 {
+     color: #000;
+}
+
 .title-filter-toolbar > .filter-toolbar {
      display: flex;
      align-items: center;
@@ -67,6 +79,11 @@ header > .icon-sun:hover {
      font-weight: 700;
 }
 
+.light-mode .filter-toolbar > .filter-button {
+     background: #adacac;
+     color: #000;
+}
+
 .filter-toolbar > .filter-button:hover {
      background: hsl(3, 86%, 64%);
 }
@@ -82,6 +99,12 @@ header > .icon-sun:hover {
      border-radius: 15px;
      padding: 20px;
      border: 1px solid #384360;
+     transition: 0.5s ease-in;
+}
+
+.light-mode .extension-card {
+     background: transparent;
+     border: 1px solid #adb0b9;
 }
 
 .logo-And-detailes {
@@ -98,6 +121,10 @@ header > .icon-sun:hover {
      font-size: 20px;
      font-weight: 700;
      margin-bottom: 10px;
+}
+
+.light-mode .extension-detailes > h2 {
+     color: #000;
 }
 
 .extension-detailes > p {
@@ -121,6 +148,50 @@ header > .icon-sun:hover {
      cursor: pointer;
      transition: 0.5s ease-in;
      font-weight: 700;
+}
+
+.switch {
+     display: flex;
+     align-items: center;
+}
+
+.switch > input {
+     display: none;
+}
+
+.switch > .slider-round {
+     background: #607d8b;
+     border-radius: 15px;
+     padding: 5px;
+     width: 55px;
+     transition: 0.3s ease-in;
+     cursor: pointer;
+}
+
+.light-mode .switch > .slider-round {
+     background: #adacac;
+}
+
+.switch > .slider-round::after {
+     content: "";
+     background: #384360;
+     border-radius: 50%;
+     width: 20px;
+     height: 20px;
+     transition: 0.5s ease-in;
+     display: block;
+}
+
+.switch > input:checked + .slider-round::after {
+     background: white;
+     transform: translateX(25px);
+}
+.switch > input:checked + .slider-round {
+     background: hsl(217, 61%, 90%);
+}
+
+.light-mode .switch > input:checked + .slider-round {
+     background: #9c27b0;
 }
 
 .attribution {

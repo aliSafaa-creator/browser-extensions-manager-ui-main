@@ -36,6 +36,7 @@
                          alt="logo"
                     />
                     <img
+                         data-iconSun
                          class="icon-sun"
                          src="./assets/images/icon-sun.svg"
                          alt="icon"
@@ -45,11 +46,22 @@
                <div class="title-filter-toolbar">
                     <h1>Extensions List</h1>
                     <div class="filter-toolbar">
-                         <button class="filter-button filter-all">All</button>
-                         <button class="filter-button filter-active">
+                         <button
+                              data-filterAll
+                              class="filter-button filter-all"
+                         >
+                              All
+                         </button>
+                         <button
+                              data-filterActive
+                              class="filter-button filter-active"
+                         >
                               Active
                          </button>
-                         <button class="filter-button filter-inactive">
+                         <button
+                              data-filterinActive
+                              class="filter-button filter-inactive"
+                         >
                               inActive
                          </button>
                     </div>
